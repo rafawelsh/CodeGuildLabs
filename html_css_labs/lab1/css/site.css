@@ -1,0 +1,60 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #D9D3C7;
+}
+
+body p{
+  text-align: center;
+  margin: 20px 80px;
+  padding: 10px;
+  color: #800000;
+}
+
+header{
+  text-align: center;
+  text-decoration: underline;
+  padding: 5px 0 25px 0;
+  font-size: 40px;
+  color: #800000;
+
+}
+
+.clippy{
+  height: 200px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 5px;
+  border-radius: 20px;
+  border-color: #E4E9B1;
+}
+
+.places{
+  text-align: center;
+}
+
+.places p{
+  /* background-color: red; */
+}
+
+.places ul li{
+  list-style: square inside url("http://www.ssbtractor.com/images/delicious_small.gif");
+  list-style-position: inside;
+}
+
+.quotes{
+  text-align: center;
+}
+
+.quotes p{
+  text-align: center;
+  /* background-color: red; */
+}
+
+.quotes ul li{
+  list-style: square inside url("https://s.yimg.com/ny/api/res/1.2/2GrR1d35FIkHhFEGS4o_bg--~A/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9ODAw/http://media.zenfs.com/en-US/homerun/digital_trends_973/820e12bb2208cd739949f2660ba63e0e");
+  list-style-position: inside;
+}
