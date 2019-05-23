@@ -1,0 +1,14 @@
+{% extends 'url_app/base.html' %}
+
+{% block content %}
+<div class="">
+  <h1>AHHHHH</h1>
+    <div class="add-url">
+      <form action="{% url 'url_app:shorten' %}" method='POST'>
+        {% csrf_token %}
+        <input type="text" name="url" placeholder="add URL" />
+        <input class="btn btn-default" type="submit"><span class="glyphicon glyphicon-plus"></span></input>
+      </form>
+    </div>
+  </div>
+{% endblock %}

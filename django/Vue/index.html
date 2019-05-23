@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Product App</title>
+  </head>
+  <body>
+
+    <h1>HELLO</h1>
+    <div id='app'>
+      <div v-for="person in persons" :key='person.id'>
+        <h3>Name: {{person.name}} </h3>
+        <p> username: [[ person.username ]]</p>
+      </div>
+    </div>
+
+    <!-- <div class="nav-bar"></div>
+
+    <div id="app">
+      <div class="cart">
+        <p>Cart({{ cart.length }})</p>
+      </div>
+
+      <product premium="premium" @add-to-cart="updateCart"><product>
+    </div>-->
+
+    <script src="main.js"></script>
+  </body>
+</html>
