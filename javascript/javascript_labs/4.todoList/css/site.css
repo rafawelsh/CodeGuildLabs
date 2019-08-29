@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.container {    
+    padding: 3rem;
+    background-color: white;
+    height: 80%;
+    width: 60rem;
+    
+}
+
+h1 {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center
+}
+
+.inputSection {
+    width: 70%;
+}
+
+.item {
+    font-family: 'Montserrat';
+    padding-top: 0.5rem;
+}
+
+.item a {
+    padding: 0 .2rem 0 .2rem;
+}
+
+.todoInput {
+    font-family: 'Montserrat';
+}
+

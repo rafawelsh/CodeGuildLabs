@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%) no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.menu {
+    padding: 1rem;
+    align-content: center
+}
+
+button {
+    border-radius: 4px;
+    background-color: antiquewhite;
+}
