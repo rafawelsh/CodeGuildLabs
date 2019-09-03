@@ -8,9 +8,4 @@ let urls = ['https://theuselessweb.com', 'https://rafaelcastellanoswelsh.com', '
 
 btn.addEventListener('click',function() {
     frame.src = urls[Math.floor(urls.length * Math.random())];
-})
-
-
-
-
-
+});
