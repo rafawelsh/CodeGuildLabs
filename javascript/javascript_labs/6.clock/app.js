@@ -10,21 +10,41 @@ function clockwork() {
 // part 2
 const start = document.getElementById('start');
 const stop = document.getElementById('stop');
-const timerInterface = document.getElementById('timerInterface')
+const pause = document.getElementById('pause');
+const resume = document.getElementById('resume');
+const timerInterface = document.getElementById('timerInterface');
 
-let timer = 0;
-timerInterface.innerHTML = timer;
 
-// let initial = new Date().setHours(0, 0, 0, 0);
+var time = null;
+var timeInterval = null;
 
-start.addEventListener('click', function(){
-        setInterval(function () {
-        timerInterface.innerHTML = timer+=1;
-    }, 1000);
+
+start.addEventListener('click', function() {
+    time = new Date();
+    time.setHours(0, 0, 0, 0);
+    timeInterval = setInterval(updateStopwatch, 1000);
+    timerInterface.innerHTML = time;
 });
 
-// stop.addEventListener('click', function () {
-//     clearInterval(function () {
-//         timerInterface.innerHTML = timer += 1;
-//     }, 1000);
-// });
+stop.addEventListener('click', function() {
+    clearInterval(timeInterval);
+    timeInterval = null;
+    time = new Date();
+    time.setHours(0, 0, 0, 0);
+    timerInterface.innerHTML = time;
+});
+
+pause.addEventListener('click', function() {
+    clearInterval(timeInterval);
+    timeInterval = null;
+});
+
+resume.addEventListener('click', function() {
+    timeInterval = setInterval(updateStopwatch, 1000);
+})
+
+function updateStopwatch() {
+    time.setSeconds(time.getSeconds() + 1);
+    timerInterface.innerHTML = time;
+};
+
