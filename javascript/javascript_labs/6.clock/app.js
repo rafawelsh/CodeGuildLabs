@@ -12,7 +12,7 @@ const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const pause = document.getElementById('pause');
 const resume = document.getElementById('resume');
-const timerInterface = document.getElementById('timerInterface');
+const timerInterface = document.getElementById('timerInterface')
 
 
 var time = null;
@@ -31,12 +31,12 @@ stop.addEventListener('click', function() {
     timeInterval = null;
     time = new Date();
     time.setHours(0, 0, 0, 0);
-    timerInterface.innerHTML = time;
+    timerInterface.innerHTML = time
 });
 
 pause.addEventListener('click', function() {
     clearInterval(timeInterval);
-    timeInterval = null;
+    timeInterval = null
 });
 
 resume.addEventListener('click', function() {
