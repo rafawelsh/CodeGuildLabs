@@ -1,0 +1,34 @@
+body {
+    width: 99%;
+    height: 100%;
+    background-color: black;
+}
+
+.terminal {
+    color: lightgreen;
+    width: 100%;
+    height: 90vh;
+    font-family: monospace;
+    font-size: 1em;
+    overflow: scroll;
+    padding-right: 1em;
+    animation-duration: 1s;
+    animation-name: colorthing;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorthing {
+    from {
+        color: rgb(0, 255, 0);
+    }
+
+    to {
+        color: rgb(0, 200, 0);
+    }
+}
+.blinking-cursor {
+    display: inline;
+    color: lightgreen;
+    -webkit-animation: 1s blink step-end infinite;
+}
